@@ -1,8 +1,8 @@
 // ============================================================
 // CSS CUSTOM PROPERTIES
-// Dark is the compiled base (color_scheme: dark in _config.yml).
-// :root defines dark values — no flash on load for dark-mode users.
-// html[data-theme="light"] overrides to light palette.
+// color_scheme: dark is compiled as the base in _config.yml,
+// so dark renders instantly on every page load — no flash.
+// html[data-theme="light"] switches to the light palette.
 // ============================================================
 
 :root {
@@ -19,9 +19,9 @@
   --fa-accent:        #FFE102;
   --fa-border:        rgba(255, 255, 255, 0.08);
   --fa-border-strong: rgba(255, 255, 255, 0.14);
-  --fa-search-bg:     #1a2138;
+  --fa-search-bg:     #222B45;
   --fa-table-head:    #151a30;
-  --fa-table-alt:     #1a2138;
+  --fa-table-alt:     rgba(255, 255, 255, 0.04);
   --fa-code-text:     #f08d9d;
   --fa-shadow:        0 2px 8px rgba(0, 0, 0, 0.35);
   --fa-toggle-bg:     #1a2138;
@@ -62,19 +62,19 @@ body,
 
 body {
   background-color: var(--fa-bg) !important;
-  color: var(--fa-text);
+  color: var(--fa-text) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--fa-heading);
+  color: var(--fa-heading) !important;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
 }
 
 p { color: var(--fa-text); }
 
-a { color: var(--fa-link); }
-a:hover { color: var(--fa-link-hover); }
+a { color: var(--fa-link) !important; }
+a:hover { color: var(--fa-link-hover) !important; }
 
 // ============================================================
 // LAYOUT — Full width, small margins
@@ -96,18 +96,18 @@ a:hover { color: var(--fa-link-hover); }
 }
 
 // ============================================================
-// SIDEBAR & NAV
+// SIDEBAR
 // ============================================================
 
 .side-bar {
   background-color: var(--fa-sidebar) !important;
-  border-right: 1px solid var(--fa-border);
-  box-shadow: none;
+  border-right: 1px solid var(--fa-border) !important;
+  box-shadow: none !important;
 }
 
 .site-header {
   background-color: var(--fa-sidebar) !important;
-  border-bottom: 1px solid var(--fa-border);
+  border-bottom: 1px solid var(--fa-border) !important;
 }
 
 .site-title {
@@ -117,106 +117,130 @@ a:hover { color: var(--fa-link-hover); }
   line-height: 1.3;
 }
 
-.nav-list .nav-list-item .nav-list-link {
-  color: var(--fa-text-muted);
-  border-radius: 5px;
+// ============================================================
+// NAV — remove gradient from hover and active (exact selector
+// from just-the-docs navigation.scss, matched to win cascade)
+// ============================================================
+
+.nav-list-link:hover,
+.nav-list-link.active {
+  background-image: none !important;
+}
+
+.nav-list-link {
+  color: var(--fa-text-muted) !important;
 
   &:hover,
   &:focus {
-    color: var(--fa-link);
-    background-color: rgba(144, 194, 255, 0.08);
-    background-image: none;
+    color: var(--fa-link) !important;
+    background-color: rgba(144, 194, 255, 0.08) !important;
   }
 
   &.active {
-    color: var(--fa-link);
-    background-color: rgba(144, 194, 255, 0.12);
-    background-image: none !important;
-    font-weight: 500;
-
-    &::after { background-color: var(--fa-primary); }
+    color: var(--fa-link) !important;
+    background-color: rgba(144, 194, 255, 0.12) !important;
+    font-weight: 600;
   }
 }
 
-.nav-list .nav-list-item > .nav-list-expander {
-  color: var(--fa-text-muted);
-  &:hover { color: var(--fa-link); }
+.nav-list-expander {
+  color: var(--fa-text-muted) !important;
+  &:hover { color: var(--fa-link) !important; }
+}
+
+.nav-category {
+  color: var(--fa-text-muted) !important;
+  border-bottom: 1px solid var(--fa-border) !important;
 }
 
 // ============================================================
-// MAIN HEADER (breadcrumbs + aux links bar)
+// MAIN HEADER — white at md breakpoint in compiled CSS,
+// override explicitly at every breakpoint
 // ============================================================
 
 .main-header {
   background-color: var(--fa-bg) !important;
-  border-bottom: 1px solid var(--fa-border);
+  border-bottom: 1px solid var(--fa-border) !important;
+}
+
+@media (min-width: 50rem) {
+  .main-header {
+    background-color: var(--fa-bg) !important;
+  }
 }
 
 .breadcrumb-nav-list-item a,
 .aux-nav-list-item a {
-  color: var(--fa-text-muted);
-  &:hover { color: var(--fa-link); }
+  color: var(--fa-text-muted) !important;
+  &:hover { color: var(--fa-link) !important; }
 }
 
 // ============================================================
 // SEARCH
 // ============================================================
 
-.search,
+.search {
+  background-color: var(--fa-sidebar) !important;
+}
+
 .search-input-wrap {
   background-color: var(--fa-sidebar) !important;
 }
 
 .search-input {
   background-color: var(--fa-search-bg) !important;
-  border: 1px solid var(--fa-border) !important;
   color: var(--fa-text) !important;
+  border: 1px solid var(--fa-border) !important;
   border-radius: 6px;
 
-  &::placeholder { color: var(--fa-text-muted); }
+  &::placeholder { color: var(--fa-text-muted) !important; }
 }
 
-.search-results-wrap {
+// Correct class name from just-the-docs source: .search-results
+.search-results {
   background-color: var(--fa-bg) !important;
-  border: 1px solid var(--fa-border);
-  box-shadow: var(--fa-shadow);
-  border-radius: 6px;
+  border: 1px solid var(--fa-border) !important;
+  box-shadow: var(--fa-shadow) !important;
+  border-radius: 0 0 6px 6px;
 }
 
 .search-result {
-  border-bottom: 1px solid var(--fa-border);
-  &:hover { background-color: var(--fa-bg-alt); }
+  border-bottom: 1px solid var(--fa-border) !important;
+  &:hover { background-color: var(--fa-bg-alt) !important; }
 }
 
-.search-result-title { color: var(--fa-heading); }
-.search-result-rel-url,
-.search-result-previews { color: var(--fa-text-muted); }
+.search-result-title { color: var(--fa-heading) !important; }
+.search-result-rel-url { color: var(--fa-text-muted) !important; }
+.search-result-previews { color: var(--fa-text-muted) !important; }
 
 // ============================================================
-// TABLES
+// TABLES — use tbody targeting to avoid counting thead row
 // ============================================================
 
 table {
-  border: 1px solid var(--fa-border);
+  border: 1px solid var(--fa-border) !important;
   border-radius: 6px;
   overflow: hidden;
-  background-color: var(--fa-bg);
+}
 
-  th {
-    background-color: var(--fa-table-head);
-    color: var(--fa-heading);
-    font-weight: 600;
-    border-bottom: 1px solid var(--fa-border-strong);
-  }
+table th {
+  background-color: var(--fa-table-head) !important;
+  color: var(--fa-heading) !important;
+  font-weight: 600;
+  border-bottom: 1px solid var(--fa-border-strong) !important;
+}
 
-  td {
-    color: var(--fa-text);
-    border-top: 1px solid var(--fa-border);
-  }
+table td {
+  color: var(--fa-text) !important;
+  border-top: 1px solid var(--fa-border) !important;
+}
 
-  tr:nth-of-type(even) td {
-    background-color: var(--fa-table-alt);
-  }
+table tbody tr:nth-child(odd) td {
+  background-color: var(--fa-bg) !important;
+}
+
+table tbody tr:nth-child(even) td {
+  background-color: var(--fa-table-alt) !important;
 }
 
 // ============================================================
@@ -224,79 +248,64 @@ table {
 // ============================================================
 
 code {
-  background-color: var(--fa-bg-code);
-  color: var(--fa-code-text);
-  border: 1px solid var(--fa-border);
+  background-color: var(--fa-bg-code) !important;
+  color: var(--fa-code-text) !important;
+  border: 1px solid var(--fa-border) !important;
   border-radius: 4px;
 }
 
 pre {
   background-color: var(--fa-bg-code) !important;
-  border: 1px solid var(--fa-border);
+  border: 1px solid var(--fa-border) !important;
   border-radius: 6px;
 
   code {
-    background: transparent;
-    border: none;
-    color: var(--fa-text);
+    background: transparent !important;
+    border: none !important;
+    color: var(--fa-text) !important;
   }
 }
 
 // ============================================================
-// CALLOUTS
-// Override compiled purple (note) and other callout colors so
-// they are readable on the dark background.
+// CALLOUTS — override compiled purple (note) and others
 // ============================================================
 
-.callout {
-  color: var(--fa-text) !important;
-  border-radius: 6px;
+.callout { border-radius: 6px; }
+.callout p { color: inherit !important; }
 
-  .callout-title { font-weight: 600; }
-}
-
-// Note (purple) — replace unreadable light purple with a dark-friendly tint
 .callout.note {
   background-color: rgba(114, 83, 237, 0.15) !important;
   border-left-color: #7253ed !important;
-
   .callout-title { color: #b09dff !important; }
 }
 
 html[data-theme="light"] .callout.note {
   background-color: #f5f0ff !important;
-  border-left-color: #7253ed !important;
-
   .callout-title { color: #5e35b1 !important; }
 }
 
-// Important (blue)
 .callout.important {
   background-color: rgba(55, 125, 255, 0.12) !important;
   .callout-title { color: var(--fa-link) !important; }
 }
 
-// Warning (red)
 .callout.warning {
   background-color: rgba(220, 53, 69, 0.12) !important;
   .callout-title { color: #ff7b7b !important; }
 }
-
 html[data-theme="light"] .callout.warning .callout-title { color: #c0392b !important; }
 
-// New (green)
 .callout.new {
   background-color: rgba(39, 174, 96, 0.12) !important;
   .callout-title { color: #4caf7d !important; }
 }
-
 html[data-theme="light"] .callout.new .callout-title { color: #1e7e34 !important; }
 
 // ============================================================
-// DIVIDERS & MISC
+// MISC
 // ============================================================
 
-hr { border-color: var(--fa-border); }
+hr { border-color: var(--fa-border) !important; }
 
 .page-header {
   border-bottom: 1px solid var(--fa-border);
