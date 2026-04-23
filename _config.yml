@@ -1,4 +1,4 @@
-title: FlyAround"
+title: FlyAround Simulations
 description: Official documentation and user guides for FlyAround — flight tracking and management for MSFS 2020/2024, X-Plane 11/12, and Prepar3D.
 baseurl: ""
 url: "https://docs.flysim.io"
@@ -8,9 +8,9 @@ remote_theme: just-the-docs/just-the-docs@v0.10.0
 # Site logo and favicon
 # logo: "/assets/images/logo.png"
 
-# Runtime theming via data-theme attribute + _sass/custom/custom.scss.
-# Base compiled as light so CSS custom property overrides are clean.
-color_scheme: light
+# Dark is compiled as the base so pages render dark instantly on load.
+# Light mode is applied via html[data-theme="light"] in custom.scss.
+color_scheme: dark
 
 # Search
 search_enabled: true

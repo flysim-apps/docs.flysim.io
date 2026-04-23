@@ -1,9 +1,32 @@
 // ============================================================
 // CSS CUSTOM PROPERTIES
-// Mirrors the FlySimIO palette (apps/flysimio/src/theme/palette.ts)
+// Dark is the compiled base (color_scheme: dark in _config.yml).
+// :root defines dark values — no flash on load for dark-mode users.
+// html[data-theme="light"] overrides to light palette.
 // ============================================================
 
-:root,
+:root {
+  --fa-bg:            #222B45;
+  --fa-bg-alt:        #1a2138;
+  --fa-bg-code:       #151a30;
+  --fa-sidebar:       #1a2138;
+  --fa-text:          #EEEEEF;
+  --fa-text-muted:    #AEB0B4;
+  --fa-heading:       #EEEEEF;
+  --fa-link:          #90c2ff;
+  --fa-link-hover:    #b8d9ff;
+  --fa-primary:       #90c2ff;
+  --fa-accent:        #FFE102;
+  --fa-border:        rgba(255, 255, 255, 0.08);
+  --fa-border-strong: rgba(255, 255, 255, 0.14);
+  --fa-search-bg:     #1a2138;
+  --fa-table-head:    #151a30;
+  --fa-table-alt:     #1a2138;
+  --fa-code-text:     #f08d9d;
+  --fa-shadow:        0 2px 8px rgba(0, 0, 0, 0.35);
+  --fa-toggle-bg:     #1a2138;
+}
+
 html[data-theme="light"] {
   --fa-bg:            #ffffff;
   --fa-bg-alt:        #f7faff;
@@ -26,28 +49,6 @@ html[data-theme="light"] {
   --fa-toggle-bg:     #ffffff;
 }
 
-html[data-theme="dark"] {
-  --fa-bg:            #222B45;
-  --fa-bg-alt:        #1a2138;
-  --fa-bg-code:       #151a30;
-  --fa-sidebar:       #1a2138;
-  --fa-text:          #EEEEEF;
-  --fa-text-muted:    #AEB0B4;
-  --fa-heading:       #EEEEEF;
-  --fa-link:          #90c2ff;
-  --fa-link-hover:    #b8d9ff;
-  --fa-primary:       #90c2ff;
-  --fa-accent:        #FFE102;
-  --fa-border:        rgba(255, 255, 255, 0.08);
-  --fa-border-strong: rgba(255, 255, 255, 0.14);
-  --fa-search-bg:     #1a2138;
-  --fa-table-head:    #151a30;
-  --fa-table-alt:     #1a2138;
-  --fa-code-text:     #f08d9d;
-  --fa-shadow:        0 2px 8px rgba(0, 0, 0, 0.35);
-  --fa-toggle-bg:     #1a2138;
-}
-
 // ============================================================
 // TYPOGRAPHY — Inter
 // ============================================================
@@ -60,7 +61,7 @@ body,
 }
 
 body {
-  background-color: var(--fa-bg);
+  background-color: var(--fa-bg) !important;
   color: var(--fa-text);
 }
 
@@ -70,36 +71,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-p {
-  color: var(--fa-text);
-}
+p { color: var(--fa-text); }
 
-a {
-  color: var(--fa-link);
-}
-a:hover {
-  color: var(--fa-link-hover);
-}
+a { color: var(--fa-link); }
+a:hover { color: var(--fa-link-hover); }
 
 // ============================================================
 // LAYOUT — Full width, small margins
 // ============================================================
 
-// Remove the artificial max-width on the content column
 .main-content-wrap {
   max-width: none !important;
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
 }
 
-// Keep the page-header flush with content
 .page-header {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
 .main {
-  background-color: var(--fa-bg);
+  background-color: var(--fa-bg) !important;
 }
 
 // ============================================================
@@ -107,13 +100,13 @@ a:hover {
 // ============================================================
 
 .side-bar {
-  background-color: var(--fa-sidebar);
+  background-color: var(--fa-sidebar) !important;
   border-right: 1px solid var(--fa-border);
   box-shadow: none;
 }
 
 .site-header {
-  background-color: var(--fa-sidebar);
+  background-color: var(--fa-sidebar) !important;
   border-bottom: 1px solid var(--fa-border);
 }
 
@@ -131,17 +124,17 @@ a:hover {
   &:hover,
   &:focus {
     color: var(--fa-link);
-    background-color: rgba(55, 125, 255, 0.07);
+    background-color: rgba(144, 194, 255, 0.08);
+    background-image: none;
   }
 
   &.active {
     color: var(--fa-link);
-    background-color: rgba(55, 125, 255, 0.12);
+    background-color: rgba(144, 194, 255, 0.12);
+    background-image: none !important;
     font-weight: 500;
 
-    &::after {
-      background-color: var(--fa-primary);
-    }
+    &::after { background-color: var(--fa-primary); }
   }
 }
 
@@ -155,7 +148,7 @@ a:hover {
 // ============================================================
 
 .main-header {
-  background-color: var(--fa-bg);
+  background-color: var(--fa-bg) !important;
   border-bottom: 1px solid var(--fa-border);
 }
 
@@ -169,6 +162,11 @@ a:hover {
 // SEARCH
 // ============================================================
 
+.search,
+.search-input-wrap {
+  background-color: var(--fa-sidebar) !important;
+}
+
 .search-input {
   background-color: var(--fa-search-bg) !important;
   border: 1px solid var(--fa-border) !important;
@@ -179,7 +177,7 @@ a:hover {
 }
 
 .search-results-wrap {
-  background-color: var(--fa-bg);
+  background-color: var(--fa-bg) !important;
   border: 1px solid var(--fa-border);
   box-shadow: var(--fa-shadow);
   border-radius: 6px;
@@ -187,18 +185,12 @@ a:hover {
 
 .search-result {
   border-bottom: 1px solid var(--fa-border);
-
   &:hover { background-color: var(--fa-bg-alt); }
 }
 
-.search-result-title {
-  color: var(--fa-heading);
-}
-
+.search-result-title { color: var(--fa-heading); }
 .search-result-rel-url,
-.search-result-previews {
-  color: var(--fa-text-muted);
-}
+.search-result-previews { color: var(--fa-text-muted); }
 
 // ============================================================
 // TABLES
@@ -252,23 +244,59 @@ pre {
 
 // ============================================================
 // CALLOUTS
+// Override compiled purple (note) and other callout colors so
+// they are readable on the dark background.
 // ============================================================
 
-.highlight,
-.note,
-.warning,
-.important,
-.new {
+.callout {
+  color: var(--fa-text) !important;
   border-radius: 6px;
+
+  .callout-title { font-weight: 600; }
 }
+
+// Note (purple) — replace unreadable light purple with a dark-friendly tint
+.callout.note {
+  background-color: rgba(114, 83, 237, 0.15) !important;
+  border-left-color: #7253ed !important;
+
+  .callout-title { color: #b09dff !important; }
+}
+
+html[data-theme="light"] .callout.note {
+  background-color: #f5f0ff !important;
+  border-left-color: #7253ed !important;
+
+  .callout-title { color: #5e35b1 !important; }
+}
+
+// Important (blue)
+.callout.important {
+  background-color: rgba(55, 125, 255, 0.12) !important;
+  .callout-title { color: var(--fa-link) !important; }
+}
+
+// Warning (red)
+.callout.warning {
+  background-color: rgba(220, 53, 69, 0.12) !important;
+  .callout-title { color: #ff7b7b !important; }
+}
+
+html[data-theme="light"] .callout.warning .callout-title { color: #c0392b !important; }
+
+// New (green)
+.callout.new {
+  background-color: rgba(39, 174, 96, 0.12) !important;
+  .callout-title { color: #4caf7d !important; }
+}
+
+html[data-theme="light"] .callout.new .callout-title { color: #1e7e34 !important; }
 
 // ============================================================
 // DIVIDERS & MISC
 // ============================================================
 
-hr {
-  border-color: var(--fa-border);
-}
+hr { border-color: var(--fa-border); }
 
 .page-header {
   border-bottom: 1px solid var(--fa-border);
@@ -300,23 +328,18 @@ hr {
   &:hover {
     color: var(--fa-text);
     border-color: var(--fa-primary);
-    background-color: rgba(55, 125, 255, 0.07);
+    background-color: rgba(144, 194, 255, 0.08);
   }
 }
 
-.theme-toggle-icon {
-  font-size: 0.95rem;
-  line-height: 1;
-}
+.theme-toggle-icon { font-size: 0.95rem; line-height: 1; }
 
-// Show the correct icon based on current theme
-html[data-theme="dark"] .theme-toggle .theme-toggle-label::before  { content: "Light"; }
-html[data-theme="dark"] .theme-toggle .theme-toggle-icon::before   { content: "☼"; }
+html[data-theme="dark"]  .theme-toggle .theme-toggle-label::before { content: "Light"; }
+html[data-theme="dark"]  .theme-toggle .theme-toggle-icon::before  { content: "☼"; }
 html[data-theme="light"] .theme-toggle .theme-toggle-label::before { content: "Dark"; }
 html[data-theme="light"] .theme-toggle .theme-toggle-icon::before  { content: "☾"; }
-// Fallback before JS runs
-.theme-toggle .theme-toggle-label::before  { content: "Dark"; }
-.theme-toggle .theme-toggle-icon::before   { content: "☾"; }
+.theme-toggle .theme-toggle-label::before { content: "Light"; }
+.theme-toggle .theme-toggle-icon::before  { content: "☼"; }
 
 // ============================================================
 // MOBILE
@@ -335,10 +358,7 @@ html[data-theme="light"] .theme-toggle .theme-toggle-icon::before  { content: "�
     padding-right: 1rem !important;
   }
 
-  table {
-    font-size: 0.8rem;
-  }
-
+  table { font-size: 0.8rem; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.3rem; }
 }
