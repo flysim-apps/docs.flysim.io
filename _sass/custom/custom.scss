@@ -1,0 +1,342 @@
+// ============================================================
+// CSS CUSTOM PROPERTIES
+// Mirrors the FlySimIO palette (apps/flysimio/src/theme/palette.ts)
+// ============================================================
+
+:root,
+html[data-theme="light"] {
+  --fa-bg:            #ffffff;
+  --fa-bg-alt:        #f7faff;
+  --fa-bg-code:       #f5f6fa;
+  --fa-sidebar:       #f7faff;
+  --fa-text:          #1e2022;
+  --fa-text-muted:    #677788;
+  --fa-heading:       #1e2022;
+  --fa-link:          #377dff;
+  --fa-link-hover:    #2f6ad9;
+  --fa-primary:       #377dff;
+  --fa-accent:        #f9b934;
+  --fa-border:        rgba(0, 0, 0, 0.10);
+  --fa-border-strong: rgba(0, 0, 0, 0.16);
+  --fa-search-bg:     #ffffff;
+  --fa-table-head:    #edf1f7;
+  --fa-table-alt:     #f7faff;
+  --fa-code-text:     #c7254e;
+  --fa-shadow:        0 2px 8px rgba(23, 70, 161, 0.10);
+  --fa-toggle-bg:     #ffffff;
+}
+
+html[data-theme="dark"] {
+  --fa-bg:            #222B45;
+  --fa-bg-alt:        #1a2138;
+  --fa-bg-code:       #151a30;
+  --fa-sidebar:       #1a2138;
+  --fa-text:          #EEEEEF;
+  --fa-text-muted:    #AEB0B4;
+  --fa-heading:       #EEEEEF;
+  --fa-link:          #5a9eff;
+  --fa-link-hover:    #7ab3ff;
+  --fa-primary:       #5a9eff;
+  --fa-accent:        #FFE102;
+  --fa-border:        rgba(255, 255, 255, 0.08);
+  --fa-border-strong: rgba(255, 255, 255, 0.14);
+  --fa-search-bg:     #1a2138;
+  --fa-table-head:    #151a30;
+  --fa-table-alt:     #1a2138;
+  --fa-code-text:     #f08d9d;
+  --fa-shadow:        0 2px 8px rgba(0, 0, 0, 0.35);
+  --fa-toggle-bg:     #1a2138;
+}
+
+// ============================================================
+// TYPOGRAPHY — Inter
+// ============================================================
+
+body,
+.site-title,
+.nav-list-link,
+.main-content {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--fa-bg);
+  color: var(--fa-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--fa-heading);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  color: var(--fa-text);
+}
+
+a {
+  color: var(--fa-link);
+}
+a:hover {
+  color: var(--fa-link-hover);
+}
+
+// ============================================================
+// LAYOUT — Full width, small margins
+// ============================================================
+
+// Remove the artificial max-width on the content column
+.main-content-wrap {
+  max-width: none !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+// Keep the page-header flush with content
+.page-header {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.main {
+  background-color: var(--fa-bg);
+}
+
+// ============================================================
+// SIDEBAR & NAV
+// ============================================================
+
+.side-bar {
+  background-color: var(--fa-sidebar);
+  border-right: 1px solid var(--fa-border);
+  box-shadow: none;
+}
+
+.site-header {
+  background-color: var(--fa-sidebar);
+  border-bottom: 1px solid var(--fa-border);
+}
+
+.site-title {
+  color: var(--fa-heading) !important;
+  font-weight: 700;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: var(--fa-text-muted);
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: var(--fa-link);
+    background-color: rgba(55, 125, 255, 0.07);
+  }
+
+  &.active {
+    color: var(--fa-link);
+    background-color: rgba(55, 125, 255, 0.12);
+    font-weight: 500;
+
+    &::after {
+      background-color: var(--fa-primary);
+    }
+  }
+}
+
+.nav-list .nav-list-item > .nav-list-expander {
+  color: var(--fa-text-muted);
+  &:hover { color: var(--fa-link); }
+}
+
+// ============================================================
+// MAIN HEADER (breadcrumbs + aux links bar)
+// ============================================================
+
+.main-header {
+  background-color: var(--fa-bg);
+  border-bottom: 1px solid var(--fa-border);
+}
+
+.breadcrumb-nav-list-item a,
+.aux-nav-list-item a {
+  color: var(--fa-text-muted);
+  &:hover { color: var(--fa-link); }
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+
+.search-input {
+  background-color: var(--fa-search-bg) !important;
+  border: 1px solid var(--fa-border) !important;
+  color: var(--fa-text) !important;
+  border-radius: 6px;
+
+  &::placeholder { color: var(--fa-text-muted); }
+}
+
+.search-results-wrap {
+  background-color: var(--fa-bg);
+  border: 1px solid var(--fa-border);
+  box-shadow: var(--fa-shadow);
+  border-radius: 6px;
+}
+
+.search-result {
+  border-bottom: 1px solid var(--fa-border);
+
+  &:hover { background-color: var(--fa-bg-alt); }
+}
+
+.search-result-title {
+  color: var(--fa-heading);
+}
+
+.search-result-rel-url,
+.search-result-previews {
+  color: var(--fa-text-muted);
+}
+
+// ============================================================
+// TABLES
+// ============================================================
+
+table {
+  border: 1px solid var(--fa-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--fa-bg);
+
+  th {
+    background-color: var(--fa-table-head);
+    color: var(--fa-heading);
+    font-weight: 600;
+    border-bottom: 1px solid var(--fa-border-strong);
+  }
+
+  td {
+    color: var(--fa-text);
+    border-top: 1px solid var(--fa-border);
+  }
+
+  tr:nth-of-type(even) td {
+    background-color: var(--fa-table-alt);
+  }
+}
+
+// ============================================================
+// CODE
+// ============================================================
+
+code {
+  background-color: var(--fa-bg-code);
+  color: var(--fa-code-text);
+  border: 1px solid var(--fa-border);
+  border-radius: 4px;
+}
+
+pre {
+  background-color: var(--fa-bg-code) !important;
+  border: 1px solid var(--fa-border);
+  border-radius: 6px;
+
+  code {
+    background: transparent;
+    border: none;
+    color: var(--fa-text);
+  }
+}
+
+// ============================================================
+// CALLOUTS
+// ============================================================
+
+.highlight,
+.note,
+.warning,
+.important,
+.new {
+  border-radius: 6px;
+}
+
+// ============================================================
+// DIVIDERS & MISC
+// ============================================================
+
+hr {
+  border-color: var(--fa-border);
+}
+
+.page-header {
+  border-bottom: 1px solid var(--fa-border);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+// ============================================================
+// THEME TOGGLE BUTTON
+// ============================================================
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--fa-toggle-bg);
+  border: 1px solid var(--fa-border-strong);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  color: var(--fa-text-muted);
+  font-size: 0.8rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--fa-text);
+    border-color: var(--fa-primary);
+    background-color: rgba(55, 125, 255, 0.07);
+  }
+}
+
+.theme-toggle-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+// Show the correct icon based on current theme
+html[data-theme="dark"] .theme-toggle .theme-toggle-label::before  { content: "Light"; }
+html[data-theme="dark"] .theme-toggle .theme-toggle-icon::before   { content: "☼"; }
+html[data-theme="light"] .theme-toggle .theme-toggle-label::before { content: "Dark"; }
+html[data-theme="light"] .theme-toggle .theme-toggle-icon::before  { content: "☾"; }
+// Fallback before JS runs
+.theme-toggle .theme-toggle-label::before  { content: "Dark"; }
+.theme-toggle .theme-toggle-icon::before   { content: "☾"; }
+
+// ============================================================
+// MOBILE
+// ============================================================
+
+@media (max-width: 800px) {
+  .main-content-wrap {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content-wrap {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+}

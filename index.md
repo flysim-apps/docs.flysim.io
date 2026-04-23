@@ -17,7 +17,7 @@ The complete operations platform for Microsoft Flight Simulator pilots who want 
 
 ## What is FlyAround?
 
-FlyAround is a **virtual airline management platform** built for Microsoft Flight Simulator (MSFS) enthusiasts. It runs as a Windows desktop application alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
+FlyAround is a **flight tracking and management platform** built for Microsoft Flight Simulator (MSFS) enthusiasts. It runs as a Windows desktop application alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
 
 Whether you fly solo or as part of a virtual airline community, FlyAround transforms your simulator sessions into a structured, data-rich airline operation — from pre-flight planning through touchdown and debrief.
 

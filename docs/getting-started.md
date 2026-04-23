@@ -17,16 +17,47 @@ nav_order: 2
 
 ## What is FlyAround?
 
-FlyAround is a virtual airline management platform designed for Microsoft Flight Simulator (MSFS). It adds a full logistics layer to your sim — flight planning, cargo/passenger loading, real-time tracking, logbook keeping, and more — all from a desktop app that runs alongside your simulator.
+FlyAround is a flight tracking and management platform designed for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12 and Prepar3D. It adds a full logistics layer to your sim — flight planning, cargo/passenger loading, real-time tracking, logbook keeping, and more — all from a desktop app that runs alongside your simulator.
 
 ---
 
 ## System Requirements
 
-- Windows PC with Microsoft Flight Simulator installed
+- Windows PC with a supported flight simulator installed
 - FlyAround desktop app (Windows WebView2-based application)
 - Active internet connection
 - A FlyAround account
+
+### Supported Simulators
+
+FlyAround connects to the following simulators:
+
+| Simulator | Notes |
+|-----------|--|
+| Microsoft Flight Simulator 2020 | Requires FSUIPC |
+| Microsoft Flight Simulator 2024 | Requires FSUIPC|
+| X-Plane 11 | Requires XPUIPC |
+| X-Plane 12 | Requires XPUIPC |
+| Prepar3D | Requires FSUIPC |
+
+### Required Middleware
+
+FlyAround communicates with your simulator through a bridge application. You must have one of the following installed and running **before** launching FlyAround:
+
+- **FSUIPC** — required for MSFS 2020, MSFS 2024, and Prepar3D
+- **XPUIPC** — required for X-Plane 11 / 12
+
+{: .note }
+Native MSFS connection (without FSUIPC) is planned and coming soon.
+
+### Third-Party Integrations
+
+Some features depend on external services and require separate accounts or subscriptions:
+
+| Service | Required for |
+|---------|-------------|
+| **Navigraph** (subscription) | Internal flight planning, ATC layer on the Live Map |
+| **SimBrief** (free account) | External flight plan import in the Dispatcher Wizard |
 
 ---
 

@@ -15,7 +15,7 @@ parent: FAQ
 
 ## What is FlyAround?
 
-FlyAround is a virtual airline logistics management platform for Microsoft Flight Simulator (MSFS). It runs as a Windows desktop app alongside your simulator and adds a full airline operations layer: flight planning, cargo/passenger loading, real-time position tracking, flight logging, and community features like group flights and live maps.
+FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12, and Prepar3D. It runs as a Windows desktop app alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, flight logging, and community features like group flights and live maps.
 
 ---
 

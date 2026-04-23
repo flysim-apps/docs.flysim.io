@@ -1,0 +1,5 @@
+// Override Just the Docs layout variables before the theme compiles them.
+// Content width is handled via CSS in custom.scss; these set the SCSS
+// baseline so internal calc() expressions stay consistent.
+$content-width: 1400px;
+$nav-width: 260px;
