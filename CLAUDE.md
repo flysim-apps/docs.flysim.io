@@ -59,5 +59,5 @@ Available types: `highlight`, `important`, `new`, `note`, `warning`.
 
 - Pages use `{: .no_toc }` on the `h1` and a TOC block when sections are long
 - Tables are used for structured reference data (keyboard shortcuts, field descriptions, etc.)
-- Section headings link to related pages using `{% link docs/page-name.md %}`
+- Section headings link to related pages using `{% raw %}{% link docs/page-name.md %}{% endraw %}`
 - Feature subsections inside `docs/` use `parent: Features`; FAQ pages use `parent: FAQ`
