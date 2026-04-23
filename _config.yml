@@ -65,3 +65,9 @@ last_edit_time_format: "%b %e %Y"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
