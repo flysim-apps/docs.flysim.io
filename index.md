@@ -26,35 +26,35 @@ Whether you fly solo or as part of a virtual airline community, FlyAround transf
 ## Key Features
 
 ### Flight Planning & Dispatch
-{: .text-purple-200 }
+
 Plan flights with a step-by-step Dispatcher Wizard. Define your route, select your aircraft, configure your passenger or cargo payload, and generate a full **Operational Flight Plan (OFP)** — with optional SimBrief integration.
 
 ### Real-Time Flight Tracking
-{: .text-purple-200 }
+
 FlyAround connects to MSFS in real time and automatically detects every flight phase — pushback, takeoff, cruise, descent, and landing. Landing reports capture your descent rate, G-force, and wind at touchdown.
 
 ### Hangar & Fleet Management
-{: .text-purple-200 }
+
 Manage your entire virtual fleet. Add aircraft by airframe type, airline livery, and tail number. View per-aircraft statistics, route history, and a map of every route you have flown with that aircraft.
 
 ### Logbook
-{: .text-purple-200 }
+
 Every completed flight is automatically saved to your personal Logbook with duration, distance, fuel burn, landing rate, and a full flight report — including the route path map and OFP document.
 
 ### Live Map
-{: .text-purple-200 }
+
 See all active FlyAround flights worldwide on a real-time interactive map. Share a link to your own live flight with friends or your audience at `flyon.me`.
 
 ### Flight Scheduling & Calendar
-{: .text-purple-200 }
+
 Schedule flights in advance and coordinate with other pilots using the built-in Calendar. Create group flight events, accept invitations from other pilots, and associate calendar events with full OFPs.
 
 ### AI Co-Pilot
-{: .text-purple-200 }
+
 The **FlyAround AI Assistant** is a floating in-app chat bot that answers aviation questions, provides real-time weather (METAR), assists with flight planning, and guides you through app features.
 
 ### Streaming Overlay
-{: .text-purple-200 }
+
 A dedicated streaming overlay displays your live flight data on screen for your viewers. Capture it as a browser source in OBS or Streamlabs for a professional on-stream HUD.
 
 ---

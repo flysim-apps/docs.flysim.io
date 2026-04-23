@@ -302,6 +302,17 @@ html[data-theme="light"] .callout.warning .callout-title { color: #c0392b !impor
 html[data-theme="light"] .callout.new .callout-title { color: #1e7e34 !important; }
 
 // ============================================================
+// FOOTER
+// ============================================================
+
+.site-footer {
+  color: var(--fa-text-muted) !important;
+  border-top: 1px solid var(--fa-border) !important;
+
+  a { color: var(--fa-link) !important; }
+}
+
+// ============================================================
 // MISC
 // ============================================================
 

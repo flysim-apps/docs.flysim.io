@@ -2,22 +2,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <script>
-  // Set data-theme before any CSS is applied to prevent flash of wrong theme.
-  // color_scheme: dark is compiled as the base, so dark renders instantly.
-  // Only light mode needs the override here.
+  // Runs before first paint. Sets data-theme on <html> so CSS custom
+  // properties and the inline <style> below resolve on the very first render.
   (function () {
     var saved = localStorage.getItem('docs-theme');
     var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', saved || preferred);
   }());
 </script>
-<!-- Guard against light-mode flash for users who switched to light.
-     Dark renders natively from compiled CSS; light needs an instant override. -->
+<!--
+  Critical theme styles inlined so they are part of the initial CSSOM —
+  eliminates flash caused by the difference between the compiled Just the Docs
+  dark base (#27262b) and our custom dark palette (#222B45).
+  Covers both dark and light so navigation never flickers regardless of mode.
+-->
 <style>
+  /* ── DARK (default compiled base, override to our palette) ── */
+  html:not([data-theme="light"]) body,
+  html:not([data-theme="light"]) .main        { background-color: #222B45 !important; color: #EEEEEF !important; }
+  html:not([data-theme="light"]) .side-bar,
+  html:not([data-theme="light"]) .site-header,
+  html:not([data-theme="light"]) .search,
+  html:not([data-theme="light"]) .search-input-wrap { background-color: #1a2138 !important; }
+  html:not([data-theme="light"]) .main-header { background-color: #222B45 !important; }
+
+  /* ── LIGHT (override compiled dark back to light) ── */
   html[data-theme="light"] body,
-  html[data-theme="light"] .main { background-color: #ffffff !important; }
+  html[data-theme="light"] .main              { background-color: #ffffff !important; color: #1e2022 !important; }
   html[data-theme="light"] .side-bar,
-  html[data-theme="light"] .site-header { background-color: #f7faff !important; }
-  html[data-theme="light"] .main-header { background-color: #ffffff !important; }
+  html[data-theme="light"] .site-header,
+  html[data-theme="light"] .search,
+  html[data-theme="light"] .search-input-wrap { background-color: #f7faff !important; }
+  html[data-theme="light"] .main-header       { background-color: #ffffff !important; }
 </style>
 <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>

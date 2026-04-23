@@ -43,7 +43,7 @@ callouts:
 
 # Aux links (top-right nav)
 aux_links:
-  "FlyAround ↗":
+  "FlyAround Simulations ↗":
     - "https://flysim.io"
 
 aux_links_new_tab: true
