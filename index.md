@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-# FlyAround — Virtual Airline Management for MSFS
+# FlyAround — Flight Tracking & Management
 {: .fs-9 }
 
 The complete operations platform for Microsoft Flight Simulator pilots who want a real airline experience.

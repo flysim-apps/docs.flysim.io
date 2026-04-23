@@ -2,11 +2,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <script>
-  // Run before first paint to avoid flash of wrong theme.
+  // Set data-theme before any CSS is applied to prevent flash of wrong theme.
   (function () {
     var saved = localStorage.getItem('docs-theme');
     var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', saved || preferred);
   }());
 </script>
+<!-- Inline critical dark-mode background colors so they apply instantly,
+     before the external stylesheet is parsed, eliminating navigation flash. -->
+<style>
+  html[data-theme="dark"] body { background-color: #222B45 !important; }
+  html[data-theme="dark"] .side-bar,
+  html[data-theme="dark"] .site-header { background-color: #1a2138 !important; }
+  html[data-theme="dark"] .main { background-color: #222B45 !important; }
+</style>
 <script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>

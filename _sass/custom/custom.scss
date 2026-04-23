@@ -34,9 +34,9 @@ html[data-theme="dark"] {
   --fa-text:          #EEEEEF;
   --fa-text-muted:    #AEB0B4;
   --fa-heading:       #EEEEEF;
-  --fa-link:          #5a9eff;
-  --fa-link-hover:    #7ab3ff;
-  --fa-primary:       #5a9eff;
+  --fa-link:          #90c2ff;
+  --fa-link-hover:    #b8d9ff;
+  --fa-primary:       #90c2ff;
   --fa-accent:        #FFE102;
   --fa-border:        rgba(255, 255, 255, 0.08);
   --fa-border-strong: rgba(255, 255, 255, 0.14);
@@ -120,6 +120,8 @@ a:hover {
 .site-title {
   color: var(--fa-heading) !important;
   font-weight: 700;
+  font-size: 0.85rem !important;
+  line-height: 1.3;
 }
 
 .nav-list .nav-list-item .nav-list-link {
