@@ -72,11 +72,11 @@ A dedicated streaming overlay displays your live flight data on screen for your 
 
 ## Platform
 
-FlyAround runs as a **Windows desktop app** built on WebView2 and communicates with a local .NET backend that bridges the gap between the web interface and your simulator. All data syncs with the FlyAround cloud in real time.
+FlyAround runs as a **Windows desktop application** that connects to your running flight simulator. All data syncs with the FlyAround cloud in real time.
 
-- **Simulator:** Microsoft Flight Simulator (MSFS)
+- **Simulator:** MSFS 2020/2024, X-Plane 11/12, Prepar3D
 - **Platform:** Windows 10 / 11
-- **Connection:** Local WebView2 desktop shell + cloud sync
+- **Connection:** FSUIPC / XPUIPC
 
 ---
 
