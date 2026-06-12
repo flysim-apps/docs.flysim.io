@@ -47,7 +47,7 @@ FlyAround supports **Microsoft Flight Simulator (MSFS)** and **X-Plane 11 and 12
 
 ## Is FlyAround free?
 
-Yes. **FlyAround Community is always free** and includes the core flight-ops toolkit — flight dispatch, real-time tracking, logbook, hangar, and the live map. There's no trial and no subscription.
+Yes. **FlyAround Community is always free** and includes the core flight-ops toolkit — flight dispatch, real-time tracking, logbook, hangar, and the live map.
 
 ---
 
