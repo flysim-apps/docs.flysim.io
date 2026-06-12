@@ -1,8 +1,7 @@
 ---
 layout: default
-title: General
-nav_order: 1
-parent: FAQ
+title: General (Community)
+nav_exclude: true
 ---
 
 # General FAQ
@@ -15,7 +14,7 @@ parent: FAQ
 
 ## What is FlyAround?
 
-FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12, and Prepar3D. It runs as a Windows desktop app alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, flight logging, and community features like group flights and live maps.
+FlyAround is a virtual airline logistics management platform for flight simulators. It runs as a Windows desktop app alongside your simulator and adds a full airline operations layer: flight planning, cargo/passenger loading, real-time position tracking, flight logging, and the live map.
 
 ---
 
@@ -23,15 +22,14 @@ FlyAround is a flight tracking and management platform for Microsoft Flight Simu
 
 FlyAround is designed for flight simulation enthusiasts who want more structure and realism. It suits:
 - Solo pilots who want to log and track their flights
-- Virtual airline members who need scheduling and OFP tools
+- Pilots who want airline-style dispatch and OFP tools
 - Streamers who want a live HUD overlay for their audience
-- Community pilots who fly in coordinated groups
 
 ---
 
 ## Does FlyAround work with any aircraft add-on?
 
-Yes. FlyAround works with any aircraft loaded in MSFS. You register your aircraft in the Hangar using the airframe type, airline livery, and tail number — it does not need to match a specific add-on package.
+Yes. FlyAround works with any aircraft loaded in your simulator. You register your aircraft in the Hangar using the airframe type, airline livery, and tail number — it does not need to match a specific add-on package.
 
 ---
 
@@ -49,12 +47,7 @@ FlyAround supports **Microsoft Flight Simulator (MSFS)** and **X-Plane 11 and 12
 
 ## Is FlyAround free?
 
-There's a free **FlyAround Community** edition with the core flight-ops toolkit (dispatch, tracking, logbook, hangar, live map). The full edition offers a **free trial**, after which a subscription is required for:
-- Flight Calendar and scheduling
-- Group Flights
-- AI Assistant
-
-Visit the **Billing** tab in your Profile settings to view available plans.
+Yes. **FlyAround Community is always free** and includes the core flight-ops toolkit — flight dispatch, real-time tracking, logbook, hangar, and the live map. There's no trial and no subscription.
 
 ---
 
