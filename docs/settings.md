@@ -83,6 +83,22 @@ Navigate to **Settings → Overlay** for a full-screen live preview and configur
 
 ---
 
+## Streaming Tab
+
+*(Visible only if the Stream feature is enabled on your account)*
+
+Connect the platforms you broadcast to and configure how your broadcasts are posted:
+
+| Control | Description |
+|---------|-------------|
+| **Platforms** | Connect your YouTube and/or Twitch channel |
+| **Post format** | Title/description templates, default tags, visibility, and default platforms for a broadcast |
+
+For full setup instructions (OBS scene import, enabling the WebSocket server) and how to go live,
+see the [Streaming guide]({% link docs/streaming.md %}).
+
+---
+
 ## Support
 
 At the bottom of the navigation menu:
