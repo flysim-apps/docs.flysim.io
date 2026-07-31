@@ -57,7 +57,7 @@ A virtual FO handles lights, cabin signs, APU, spoilers and flaps through every 
 
 A fully voiced **ATC conversation** through every phase of flight — IFR clearance, pushback, taxi, takeoff, en-route hand-offs, and an automatic arrival chain down to the landing clearance. Talk to ATC with your own voice using push-to-talk.
 
-### AI Co-Pilot
+### AI Assistant
 
 The **FlyAround AI Assistant** is a floating in-app chat bot that answers aviation questions, provides real-time weather (METAR), assists with flight planning, and guides you through app features — typed, or spoken via push-to-talk.
 

@@ -69,7 +69,7 @@ The **MCP Endpoint for AI Agents** card shows the local address of FlyAround's b
 
 | Setting | Description |
 |---------|-------------|
-| **Assistant Name** | Custom name for your AI Co-Pilot (default: "FlyAround AI") |
+| **Assistant Name** | Custom name for your AI Assistant (default: "FlyAround AI") |
 | **Mascot** | Choose the mascot character: Kika (classic) or Bouba (cap) |
 | **Voice & Push-to-Talk** | Enable push-to-talk, bind the assistant and ATC transmit keys (keyboard or joystick), pick and test your microphone, and set the recognition language — see [AI Assistant]({% link docs/ai-assistant.md %}) and [ATC Communications]({% link docs/atc-communications.md %}) |
 

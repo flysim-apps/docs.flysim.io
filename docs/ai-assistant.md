@@ -5,7 +5,7 @@ nav_order: 10
 parent: Features
 ---
 
-# AI Assistant — FlyAround Co-Pilot
+# AI Assistant
 {: .no_toc }
 
 ## Table of contents

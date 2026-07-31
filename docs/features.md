@@ -19,6 +19,6 @@ Detailed guides for every FlyAround feature. Select a topic from the sidebar or 
 | [Logbook]({% link docs/logbook.md %}) | Review completed flights and statistics |
 | [Calendar & Scheduling]({% link docs/calendar-scheduling.md %}) | Schedule flights and group events |
 | [Streaming]({% link docs/streaming.md %}) | Broadcast your flight live to YouTube & Twitch |
-| [AI Assistant]({% link docs/ai-assistant.md %}) | FlyAround AI Co-Pilot |
+| [AI Assistant]({% link docs/ai-assistant.md %}) | The FlyAround AI Assistant |
 | [Settings]({% link docs/settings.md %}) | Application configuration |
 | [Profile & Billing]({% link docs/profile-billing.md %}) | Account management and subscription |
