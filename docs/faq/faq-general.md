@@ -15,7 +15,7 @@ parent: FAQ
 
 ## What is FlyAround?
 
-FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12, and Prepar3D. It runs as a Windows desktop app alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, flight logging, and community features like group flights and live maps.
+FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12, and Prepar3D. It runs as a desktop app — on Windows, macOS and Linux — alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, ATC communications, flight logging, and community features like group flights and live maps.
 
 ---
 
@@ -31,7 +31,7 @@ FlyAround is designed for flight simulation enthusiasts who want more structure 
 
 ## Does FlyAround work with any aircraft add-on?
 
-Yes. FlyAround works with any aircraft loaded in MSFS. You register your aircraft in the Hangar using the airframe type, airline livery, and tail number — it does not need to match a specific add-on package.
+Yes. FlyAround works with any aircraft loaded in your simulator. You register your aircraft in the Hangar using the airframe type, airline livery, and tail number — it does not need to match a specific add-on package.
 
 ---
 
@@ -43,7 +43,13 @@ Yes. FlyAround requires an active internet connection for authentication, flight
 
 ## What simulator is supported?
 
-FlyAround supports **Microsoft Flight Simulator (MSFS)** and **X-Plane 11 and 12**. The app communicates with your simulator in real time via a local backend service.
+FlyAround supports **Microsoft Flight Simulator 2020/2024** and **Prepar3D** (via FSUIPC, Windows) and **X-Plane 11 and 12** (via the FlyAround Simulations Connect plugin — Windows, macOS and Linux). The app communicates with your simulator in real time via a local backend service.
+
+---
+
+## What platforms does FlyAround run on?
+
+Windows 10/11, macOS, and Linux. On macOS and Linux the app connects to X-Plane through the FlyAround Simulations Connect plugin; MSFS (FSUIPC) connections are Windows-only. A few Windows/MSFS-specific options (PMDG offsets, GSX Pro ground handling, in-flight screenshots) are hidden on macOS/Linux where they don't apply.
 
 ---
 
@@ -52,9 +58,16 @@ FlyAround supports **Microsoft Flight Simulator (MSFS)** and **X-Plane 11 and 12
 There's a free **FlyAround Community** edition with the core flight-ops toolkit (dispatch, tracking, logbook, hangar, live map). The full edition offers a **free trial**, after which a subscription is required for:
 - Flight Calendar and scheduling
 - Group Flights
-- AI Assistant
+- AI Assistant and push-to-talk voice
+- Live streaming to YouTube / Twitch
 
 Visit the **Billing** tab in your Profile settings to view available plans.
+
+---
+
+## What are AI credits?
+
+AI-powered features — realistic crew voices, AI checklists, push-to-talk speech recognition, ATC voice — draw from a monthly **AI Credits** allowance included with your plan. A meter on your Profile page shows what's left and when it renews, and you can buy top-up credits that never expire. When credits run out, crew voice falls back to the standard voice and AI checklists pause until renewal. See [AI Assistant]({% link docs/ai-assistant.md %}#ai-credits).
 
 ---
 

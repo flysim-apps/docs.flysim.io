@@ -15,6 +15,7 @@ Detailed guides for every FlyAround feature. Select a topic from the sidebar or 
 | [Hangar & Fleet]({% link docs/hangar-fleet.md %}) | Add and manage your aircraft |
 | [Flight Planning]({% link docs/flight-planning.md %}) | Dispatcher Wizard — plan and dispatch flights |
 | [Active Flight]({% link docs/active-flight.md %}) | Managing an in-progress flight |
+| [ATC Communications]({% link docs/atc-communications.md %}) | Voiced ATC conversation with push-to-talk |
 | [Logbook]({% link docs/logbook.md %}) | Review completed flights and statistics |
 | [Calendar & Scheduling]({% link docs/calendar-scheduling.md %}) | Schedule flights and group events |
 | [Streaming]({% link docs/streaming.md %}) | Broadcast your flight live to YouTube & Twitch |

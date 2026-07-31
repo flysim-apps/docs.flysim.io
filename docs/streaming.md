@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Streaming
-nav_order: 10
+nav_order: 9
 parent: Features
 ---
 
@@ -42,13 +42,21 @@ The scene, named **FlyAround**, contains:
 
 | Source | Purpose |
 |--------|---------|
-| **Sim (Game Capture)** | Captures your fullscreen simulator |
-| **FlyAround Overlay** | A browser source showing the in-game overlay (`http://localhost:5070/streaming` by default) |
+| **Sim (Window Capture)** | Captures your simulator window (MSFS / P3D / X-Plane) |
+| **FlyAround Overlay** | A browser source showing the in-game overlay (`http://localhost:30500/share/#/streaming` by default) |
 | **Desktop Audio** | Sim sound |
 
 {: .note }
-If your overlay isn't served from `localhost:5070`, double-click **FlyAround Overlay** in OBS and
-set the URL to your overlay's `/streaming` address. The background is transparent so it composites
+FlyAround detects your running simulator window and fills in the Window Capture target each time
+you download the scene, so it's ready to go without picking the window yourself in OBS. If no sim
+is running yet when you download it, start your sim first and re-download, or set the capture
+window manually under that source's **Properties** in OBS.
+
+{: .note }
+The overlay is served by FlyAround's own embedded server on port 30500, at the `/share/#/streaming`
+path (not just `/streaming` — the overlay is mounted under `/share` and uses hash-based routing).
+If it isn't reachable there, double-click **FlyAround Overlay** in OBS and set the URL to
+`http://localhost:30500/share/#/streaming`. The background is transparent so it composites
 cleanly over the game.
 
 ### 3. Enable OBS' WebSocket server
@@ -60,11 +68,14 @@ In OBS: **Tools → WebSocket Server Settings**:
 
 - ✅ Enable WebSocket server
 - Port: **4455** (default)
-- Password: optional, but recommended
+- Newer OBS versions turn on authentication and generate a random password by default — leave it,
+  or set your own
 
 {: .note }
-If you set a password, enter it in FlyAround's **Settings → Streaming** so it can connect. Host and
-port default to `ws://127.0.0.1:4455`, matching OBS' defaults.
+If a password is set, enter it under FlyAround's **Settings → Streaming → OBS connection** so it
+can connect — without it, "Go Live" fails with "Can't reach OBS". Host and port default to
+`ws://127.0.0.1:4455`, matching OBS' defaults; only change the address there if OBS isn't reachable
+at that default.
 
 ### 4. Connect your channel(s)
 

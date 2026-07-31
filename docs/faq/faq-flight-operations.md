@@ -65,6 +65,12 @@ Select the mode in Step 3 (On-Board Services) of the Dispatcher.
 
 ---
 
+## Can I talk to ATC?
+
+Yes. Tune a controller's frequency on COM1 and use the ATC button on the Actions bar — request IFR clearance, pushback, taxi, takeoff and landing, with automatic controller hand-offs as you fly. You can click requests or speak them with push-to-talk. See [ATC Communications]({% link docs/atc-communications.md %}).
+
+---
+
 ## How do I complete a flight?
 
 Once in one of these phases — **Taxi-In, Parking, Deboarding, or Cleaning** — the **Complete Flight** button becomes available in the Speed Dial. Click it to finish. The flight is saved to your Logbook.

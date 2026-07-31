@@ -23,8 +23,8 @@ FlyAround is a flight tracking and management platform designed for Microsoft Fl
 
 ## System Requirements
 
-- Windows PC with a supported flight simulator installed
-- FlyAround desktop app (Windows WebView2-based application)
+- A Windows, macOS or Linux computer with a supported flight simulator installed
+- The FlyAround desktop app (installed via the FlyAround Simulations Installer)
 - Active internet connection
 - A FlyAround account
 
@@ -32,23 +32,22 @@ FlyAround is a flight tracking and management platform designed for Microsoft Fl
 
 FlyAround connects to the following simulators:
 
-| Simulator | Notes |
-|-----------|--|
-| Microsoft Flight Simulator 2020 | Requires FSUIPC |
-| Microsoft Flight Simulator 2024 | Requires FSUIPC|
-| X-Plane 11 | Requires XPUIPC |
-| X-Plane 12 | Requires XPUIPC |
-| Prepar3D | Requires FSUIPC |
+| Simulator | Connection | Platforms |
+|-----------|------------|-----------|
+| Microsoft Flight Simulator 2020 | FSUIPC | Windows |
+| Microsoft Flight Simulator 2024 | FSUIPC | Windows |
+| X-Plane 11 | FlyAround Simulations Connect plugin | Windows, macOS, Linux |
+| X-Plane 12 | FlyAround Simulations Connect plugin | Windows, macOS, Linux |
+| Prepar3D | FSUIPC | Windows |
 
-### Required Middleware
+### Simulator Connection
 
-FlyAround communicates with your simulator through a bridge application. You must have one of the following installed and running **before** launching FlyAround:
+- **MSFS 2020 / 2024 and Prepar3D** connect through **FSUIPC** — install and run it before launching FlyAround. Download it from [fsuipc.com](https://www.fsuipc.com/).
+- **X-Plane 11 / 12** connect through the **FlyAround Simulations Connect plugin**. Install it from the FlyAround Simulations Installer — open the Installer, navigate to the **Plugins** section, and enable the X-Plane Connect plugin. On macOS and Linux this is the only connection needed.
 
-- **FSUIPC** — required for MSFS 2020, MSFS 2024, and Prepar3D
-- **XPUIPC** — required for X-Plane 11 / 12
+### The FlyAround Simulations Bridge
 
-{: .note }
-Native MSFS connection (without FSUIPC) is planned and coming soon.
+The app ships with a background service — the **FlyAround Simulations Bridge** — that talks to your simulator and keeps tracking your flight. On Windows it lives in the system tray and keeps running even if you close the FlyAround window (use the tray icon's **Exit** to stop it, or enable **Exit when FlyAround exits** in the tray settings). On macOS and Linux the bridge starts and stops together with the app.
 
 ### Third-Party Integrations
 
@@ -56,7 +55,7 @@ Some features depend on external services and require separate accounts or subsc
 
 | Service | Required for |
 |---------|-------------|
-| **Navigraph** (subscription) | Internal flight planning, ATC layer on the Live Map |
+| **Navigraph** (subscription) | Internal flight planning, ATC layer on the Live Map, en-route Center hand-offs and the automatic arrival chain in [ATC Communications]({% link docs/atc-communications.md %}) |
 | **SimBrief** (free account) | External flight plan import in the Dispatcher Wizard |
 
 ---
@@ -105,9 +104,11 @@ FlyAround requires the simulator to be running for flight tracking features to w
 
 ---
 
-## Dark / Light Theme
+## Themes
 
 Use the **theme toggle** in the main menu to switch between light and dark mode.
+
+FlyAround also ships four full app themes — pick one under **Settings → Main Settings**: **Flight Deck**, **Glass Cockpit** (frosted, the default), **Steam Gauges** and **Radar**. Each restyles the whole app, the live map and even the taskbar icon.
 
 ---
 

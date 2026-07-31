@@ -17,7 +17,7 @@ The complete operations platform for Microsoft Flight Simulator pilots who want 
 
 ## What is FlyAround?
 
-FlyAround is a **flight tracking and management platform** built for Microsoft Flight Simulator (MSFS) enthusiasts. It runs as a Windows desktop application alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
+FlyAround is a **flight tracking and management platform** for Microsoft Flight Simulator, X-Plane and Prepar3D pilots. It runs as a desktop application — on Windows, macOS and Linux — alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
 
 Whether you fly solo or as part of a virtual airline community, FlyAround transforms your simulator sessions into a structured, data-rich airline operation — from pre-flight planning through touchdown and debrief.
 
@@ -49,13 +49,17 @@ See all active FlyAround flights worldwide on a real-time interactive map. Share
 
 Schedule flights in advance and coordinate with other pilots using the built-in Calendar. Create group flight events, accept invitations from other pilots, and associate calendar events with full OFPs.
 
+### ATC Communications
+
+A fully voiced **ATC conversation** through every phase of flight — IFR clearance, pushback, taxi, takeoff, en-route hand-offs, and an automatic arrival chain down to the landing clearance. Talk to ATC with your own voice using push-to-talk.
+
 ### AI Co-Pilot
 
-The **FlyAround AI Assistant** is a floating in-app chat bot that answers aviation questions, provides real-time weather (METAR), assists with flight planning, and guides you through app features.
+The **FlyAround AI Assistant** is a floating in-app chat bot that answers aviation questions, provides real-time weather (METAR), assists with flight planning, and guides you through app features — typed, or spoken via push-to-talk.
 
-### Streaming Overlay
+### Live Streaming
 
-A dedicated streaming overlay displays your live flight data on screen for your viewers. Capture it as a browser source in OBS or Streamlabs for a professional on-stream HUD.
+Broadcast your flight live to **YouTube and Twitch** — FlyAround drives OBS for you, with a dedicated streaming overlay HUD, stream planning from the Calendar, and highlight markers on your route.
 
 ---
 
@@ -72,11 +76,11 @@ A dedicated streaming overlay displays your live flight data on screen for your 
 
 ## Platform
 
-FlyAround runs as a **Windows desktop application** that connects to your running flight simulator. All data syncs with the FlyAround cloud in real time.
+FlyAround runs as a **desktop application** that connects to your running flight simulator. All data syncs with the FlyAround cloud in real time.
 
 - **Simulator:** MSFS 2020/2024, X-Plane 11/12, Prepar3D
-- **Platform:** Windows 10 / 11
-- **Connection:** FSUIPC / XPUIPC
+- **Platform:** Windows 10 / 11, macOS, Linux
+- **Connection:** FSUIPC (MSFS / Prepar3D, Windows) or the FlyAround Simulations Connect plugin (X-Plane, all platforms)
 
 ---
 

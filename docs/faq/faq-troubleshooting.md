@@ -17,12 +17,12 @@ parent: FAQ
 
 **Symptoms:** Connection indicator stays yellow or absent. No flight data received.
 
-1. Make sure **Microsoft Flight Simulator** is running
+1. Make sure your **simulator** is running
 2. Make sure the **FlyAround desktop app** is running (not just the web view)
-3. Wait 30–60 seconds after loading into a flight in MSFS
-4. Check that no firewall or antivirus is blocking port `30520`
-5. Restart both MSFS and the FlyAround app
-6. Verify your Windows user has permission to run the FlyAround backend service
+3. **MSFS / Prepar3D:** make sure **FSUIPC** is installed and running. **X-Plane:** make sure the **FlyAround Simulations Connect plugin** is installed (enable it in the FlyAround Simulations Installer → Plugins)
+4. Wait 30–60 seconds after loading into a flight
+5. Check that no firewall or antivirus is blocking port `30520`
+6. Restart both the simulator and the FlyAround app
 
 ---
 
@@ -96,6 +96,25 @@ parent: FAQ
 1. Check **Settings → AI Assistant** tab — if this tab is missing, the AI feature is not on your plan
 2. If the tab exists, verify the assistant is enabled
 3. The mascot may have been dragged off-screen — try logging out and back in to reset its position
+
+---
+
+## ATC has no voice
+
+1. Check the **mute button** in the ATC conversation title row — muted ATC generates no audio at all
+2. Verify **Settings → PA & Callouts** is enabled, including **Realistic AI crew voices**
+3. Check the **Voice** volume slider in the Sound settings
+4. If your AI credits ran out, voices fall back to the standard voice — but they should still speak; check your credits meter on the Profile page
+
+---
+
+## Push-to-talk isn't transcribing what I say
+
+1. Check the push-to-talk keys are bound under **Settings → AI Assistant → Voice & Push-to-Talk** (the ATC transmit key is separate from the assistant key)
+2. Use **Test microphone** there — the level bar should move as you speak
+3. Speech recognition is server-side: verify your internet connection and that you have AI credits remaining
+4. Nothing transmitted after speaking to ATC usually means the phrase wasn't confidently recognized — FlyAround never guesses; try standard phraseology like *"request pushback"*
+5. Hold the key while speaking and release when done — very short presses (under a quarter second) are ignored
 
 ---
 

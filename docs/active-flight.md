@@ -30,7 +30,7 @@ Once you have dispatched a flight through the Dispatcher Wizard, FlyAround begin
 
 ## Real-Time Tracking
 
-FlyAround connects to MSFS via WebSocket and continuously receives:
+FlyAround connects to your simulator and continuously receives:
 - Current aircraft position (latitude/longitude)
 - Altitude
 - Speed (ground speed / airspeed)
@@ -58,6 +58,18 @@ The **Speed Dial** is a floating menu on the right side of the active flight scr
 | **Settings** | Flight-specific settings and quick actions |
 | **Cancel Flight** | Cancel the active flight *(with confirmation prompt)* |
 | **Complete Flight** | Mark the flight as complete *(available during taxi-in, parking, deboarding, or cleaning phase)* |
+
+---
+
+## Actions Bar — Radios & ATC
+
+A floating, draggable **Actions bar** on the flight map shows your **COM1 / COM2 / XPDR** readout together with quick-action buttons:
+
+- Click the **COM1 readout** to open the **ATC frequencies** list for your departure, destination and nearest airport, and tune a controller with one click.
+- The **ATC button** opens the [ATC conversation]({% link docs/atc-communications.md %}) for the tuned station — request clearance, pushback, taxi, takeoff and more, fully voiced.
+- Exterior-light and cabin-sign toggles let you flip NAV/TAXI/LANDING/BEACON/STROBE lights and the seatbelt sign directly in the sim.
+
+When ATC clears you to taxi, the **cleared taxi route is drawn on the map** and shrinks as you advance along it — both to the departure runway and to your assigned gate after landing.
 
 ---
 

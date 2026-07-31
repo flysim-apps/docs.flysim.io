@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Profile & Billing
-nav_order: 10
+nav_order: 12
 parent: Features
 ---
 
@@ -45,6 +45,12 @@ Updated automatically after each completed flight:
 - **Total Flights** — Number of completed flights
 - **Flight Hours** — Total Hobbs time
 - **Distance Traveled** — Total nautical miles flown
+
+### AI Credits
+
+*(Shown if your account has AI features)*
+
+The **AI Credits** card shows how much of your monthly allowance remains, any top-up balance, and the renewal date. When you run low, a warning appears with an **Upgrade** or **Buy credits** action — top-ups are bought and managed on `my.flysim.io`. See [AI Assistant → AI Credits]({% link docs/ai-assistant.md %}#ai-credits) for what credits are used for and what happens when they run out.
 
 ---
 
