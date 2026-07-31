@@ -59,6 +59,7 @@ There's a free **FlyAround Community** edition with the core flight-ops toolkit 
 - Flight Calendar and scheduling
 - Group Flights
 - AI Assistant and push-to-talk voice
+- AI Voice Experience (realistic crew voices)
 - Live streaming to YouTube / Twitch
 
 Visit the **Billing** tab in your Profile settings to view available plans.

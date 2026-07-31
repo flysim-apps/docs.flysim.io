@@ -73,6 +73,35 @@ When ATC clears you to taxi, the **cleared taxi route is drawn on the map** and 
 
 ---
 
+## Your Virtual First Officer
+
+With **First Officer auto-actions** enabled (Settings → System), a virtual FO works the aircraft with you through every phase of flight:
+
+- **Exterior lights** — NAV, beacon, taxi, landing and strobe lights at the right moments (landing lights off passing 10,000 ft, and so on)
+- **Cabin signs** — seatbelt and no-smoking signs per phase
+- **APU and fuel pumps** — started for ATC-approved engine start, managed on arrival
+- **Spoilers and flaps** — armed for landing, retracted after
+- **Spoken callouts** — *"80 knots"*, *"V1"*, *"rotate"*, *"positive rate, gear up"* and more
+
+The FO also carries out [ATC-approved actions]({% link docs/atc-communications.md %}) — pushback, engine startup, and the line-up preparation when you're cleared for takeoff.
+
+The FO works on both MSFS and X-Plane. You can mute the spoken callouts separately under **Settings → PA & Callouts → First Officer callouts** (the FO still performs the actions silently).
+
+---
+
+## Crew Voices — AI Voice Experience
+
+With **Realistic AI crew voices** enabled (on by default, Settings → System), the captain, cabin crew and ATC speak with lifelike AI-generated voices:
+
+- Cabin announcements are spoken in the **airline's home language and then repeated in English** — just like real crew; flight-deck callouts stay in English.
+- Voices are **chosen automatically by airline**, so there's nothing to set up. You can steer the crew voice gender in Settings.
+- ATC and dispatcher lines get a VHF radio effect; ground crew speak over the interphone.
+
+{: .note }
+AI voice generation uses [AI credits]({% link docs/ai-assistant.md %}#ai-credits). When credits run out, voices fall back to the standard voice rather than going silent.
+
+---
+
 ## Flight Phase Notifications
 
 FlyAround sends automatic notifications as your flight progresses:

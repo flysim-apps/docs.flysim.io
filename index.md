@@ -49,6 +49,10 @@ See all active FlyAround flights worldwide on a real-time interactive map. Share
 
 Schedule flights in advance and coordinate with other pilots using the built-in Calendar. Create group flight events, accept invitations from other pilots, and associate calendar events with full OFPs.
 
+### Virtual First Officer & Crew Voices
+
+A virtual FO handles lights, cabin signs, APU, spoilers and flaps through every flight phase, with spoken cockpit callouts — and the **AI Voice Experience** gives your captain and cabin crew lifelike voices, with announcements in the airline's home language.
+
 ### ATC Communications
 
 A fully voiced **ATC conversation** through every phase of flight — IFR clearance, pushback, taxi, takeoff, en-route hand-offs, and an automatic arrival chain down to the landing clearance. Talk to ATC with your own voice using push-to-talk.
