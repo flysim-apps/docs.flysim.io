@@ -61,6 +61,8 @@ The **MCP Endpoint for AI Agents** card shows the local address of FlyAround's b
 | **Announcements** | Toggle individual cabin/ground announcement types on or off |
 | **First Officer callouts** | Mute the spoken FO callouts (the FO still performs the actions) |
 
+You can also replace any cabin announcement or callout with your own recording — see [Custom PA & Callout Audio]({% link docs/custom-audio.md %}).
+
 ---
 
 ## AI Assistant Tab
