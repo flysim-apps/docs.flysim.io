@@ -19,7 +19,7 @@ parent: FAQ
 
 1. Make sure your **simulator** is running
 2. Make sure the **FlyAround desktop app** is running (not just the web view)
-3. **MSFS / Prepar3D:** make sure **FSUIPC** is installed and running. **X-Plane:** make sure the **FlyAround Simulations Connect plugin** is installed (enable it in the FlyAround Simulations Installer → Plugins)
+3. **MSFS:** make sure the simulator is actually running and past the main menu — the link uses SimConnect and needs nothing else installed. **X-Plane:** make sure the **FlyAround Simulations Connect plugin** is installed (enable it in the FlyAround Simulations Installer → Plugins)
 4. Wait 30–60 seconds after loading into a flight
 5. Check that no firewall or antivirus is blocking port `30520`
 6. Restart both the simulator and the FlyAround app

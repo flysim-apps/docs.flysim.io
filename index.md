@@ -17,7 +17,7 @@ The complete operations platform for Microsoft Flight Simulator pilots who want 
 
 ## What is FlyAround?
 
-FlyAround is a **flight tracking and management platform** for Microsoft Flight Simulator, X-Plane and Prepar3D pilots. It runs as a desktop application — on Windows, macOS and Linux — alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
+FlyAround is a **flight tracking and management platform** for Microsoft Flight Simulator and X-Plane pilots. It runs as a desktop application — on Windows, macOS and Linux — alongside your simulator, connecting directly to your flight session to track and enrich every flight you make.
 
 Whether you fly solo or as part of a virtual airline community, FlyAround transforms your simulator sessions into a structured, data-rich airline operation — from pre-flight planning through touchdown and debrief.
 
@@ -82,9 +82,9 @@ Broadcast your flight live to **YouTube and Twitch** — FlyAround drives OBS fo
 
 FlyAround runs as a **desktop application** that connects to your running flight simulator. All data syncs with the FlyAround cloud in real time.
 
-- **Simulator:** MSFS 2020/2024, X-Plane 11/12, Prepar3D
+- **Simulator:** MSFS 2020/2024, X-Plane 11/12
 - **Platform:** Windows 10 / 11, macOS, Linux
-- **Connection:** FSUIPC (MSFS / Prepar3D, Windows) or the FlyAround Simulations Connect plugin (X-Plane, all platforms)
+- **Connection:** SimConnect (MSFS, Windows) or the FlyAround Simulations Connect plugin (X-Plane, all platforms)
 
 ---
 

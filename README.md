@@ -1,6 +1,6 @@
 # FlyAround Documentation
 
-Source for [docs.flysim.io](https://docs.flysim.io) — the official documentation for **FlyAround**, a flight tracking and management platform for MSFS 2020/2024, X-Plane 11/12, and Prepar3D.
+Source for [docs.flysim.io](https://docs.flysim.io) — the official documentation for **FlyAround**, a flight tracking and management platform for MSFS 2020/2024 and X-Plane 11/12.
 
 Built with [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://just-the-docs.com/) theme. Deployed automatically to GitHub Pages on every push to `main`.
 

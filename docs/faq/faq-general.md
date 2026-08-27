@@ -15,7 +15,7 @@ parent: FAQ
 
 ## What is FlyAround?
 
-FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12, and Prepar3D. It runs as a desktop app — on Windows, macOS and Linux — alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, ATC communications, flight logging, and community features like group flights and live maps.
+FlyAround is a flight tracking and management platform for Microsoft Flight Simulator (MSFS) 2020/2024 and X-Plane 11/12. It runs as a desktop app — on Windows, macOS and Linux — alongside your simulator and adds a full operations layer: flight planning, cargo/passenger loading, real-time position tracking, ATC communications, flight logging, and community features like group flights and live maps.
 
 ---
 
@@ -43,13 +43,13 @@ Yes. FlyAround requires an active internet connection for authentication, flight
 
 ## What simulator is supported?
 
-FlyAround supports **Microsoft Flight Simulator 2020/2024** and **Prepar3D** (via FSUIPC, Windows) and **X-Plane 11 and 12** (via the FlyAround Simulations Connect plugin — Windows, macOS and Linux). The app communicates with your simulator in real time via a local backend service.
+FlyAround supports **Microsoft Flight Simulator 2020/2024** (via SimConnect, Windows) and **X-Plane 11 and 12** (via the FlyAround Simulations Connect plugin — Windows, macOS and Linux). FSX and Prepar3D are not supported. The app communicates with your simulator in real time via a local backend service.
 
 ---
 
 ## What platforms does FlyAround run on?
 
-Windows 10/11, macOS, and Linux. On macOS and Linux the app connects to X-Plane through the FlyAround Simulations Connect plugin; MSFS (FSUIPC) connections are Windows-only. A few Windows/MSFS-specific options (PMDG offsets, GSX Pro ground handling, in-flight screenshots) are hidden on macOS/Linux where they don't apply.
+Windows 10/11, macOS, and Linux. On macOS and Linux the app connects to X-Plane through the FlyAround Simulations Connect plugin; MSFS connections are Windows-only. A few Windows/MSFS-specific options (PMDG SDK support, GSX Pro ground handling, in-flight screenshots) are hidden on macOS/Linux where they don't apply.
 
 ---
 

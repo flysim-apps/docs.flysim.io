@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Static documentation site for **FlyAround** — a flight tracking and management platform for Microsoft Flight Simulator 2020/2024, X-Plane 11/12, and Prepar3D. Built with Jekyll and the [Just the Docs](https://just-the-docs.com/) theme, deployed to [docs.flysim.io](https://docs.flysim.io) via GitHub Pages.
+Static documentation site for **FlyAround** — a flight tracking and management platform for Microsoft Flight Simulator 2020/2024 and X-Plane 11/12. Built with Jekyll and the [Just the Docs](https://just-the-docs.com/) theme, deployed to [docs.flysim.io](https://docs.flysim.io) via GitHub Pages.
 
 ## Local development
 

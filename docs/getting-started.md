@@ -17,7 +17,7 @@ nav_order: 2
 
 ## What is FlyAround?
 
-FlyAround is a flight tracking and management platform designed for Microsoft Flight Simulator (MSFS) 2020/2024, X-Plane 11/12 and Prepar3D. It adds a full logistics layer to your sim — flight planning, cargo/passenger loading, real-time tracking, logbook keeping, and more — all from a desktop app that runs alongside your simulator.
+FlyAround is a flight tracking and management platform designed for Microsoft Flight Simulator (MSFS) 2020/2024 and X-Plane 11/12. It adds a full logistics layer to your sim — flight planning, cargo/passenger loading, real-time tracking, logbook keeping, and more — all from a desktop app that runs alongside your simulator.
 
 ---
 
@@ -34,16 +34,27 @@ FlyAround connects to the following simulators:
 
 | Simulator | Connection | Platforms |
 |-----------|------------|-----------|
-| Microsoft Flight Simulator 2020 | FSUIPC | Windows |
-| Microsoft Flight Simulator 2024 | FSUIPC | Windows |
+| Microsoft Flight Simulator 2020 | SimConnect (built in) | Windows |
+| Microsoft Flight Simulator 2024 | SimConnect (built in) | Windows |
 | X-Plane 11 | FlyAround Simulations Connect plugin | Windows, macOS, Linux |
 | X-Plane 12 | FlyAround Simulations Connect plugin | Windows, macOS, Linux |
-| Prepar3D | FSUIPC | Windows |
+
+FSX and Prepar3D are not supported.
 
 ### Simulator Connection
 
-- **MSFS 2020 / 2024 and Prepar3D** connect through **FSUIPC** — install and run it before launching FlyAround. Download it from [fsuipc.com](https://www.fsuipc.com/).
+- **MSFS 2020 / 2024** connect through **SimConnect**, which is part of the simulator — there is nothing extra to install and no third-party software to buy. Start the sim, start FlyAround, and the link comes up on its own.
 - **X-Plane 11 / 12** connect through the **FlyAround Simulations Connect plugin**. Install it from the FlyAround Simulations Installer — open the Installer, navigate to the **Plugins** section, and enable the X-Plane Connect plugin. On macOS and Linux this is the only connection needed.
+
+### FlyAround Simulations Connect for MSFS
+
+Tracking works over SimConnect alone, but a few features need to read and write cockpit variables that SimConnect does not expose. Those come from **FlyAround Simulations Connect for MSFS**, a small add-on module you install from the FlyAround Simulations Installer:
+
+- GSX Pro ground handling
+- First Officer actions on study-level aircraft (Fenix, FlyByWire, iniBuilds, ToLiss and similar)
+- The in-sim EFB panel hotkey
+
+Install it once and it loads with the simulator. Without it, flights are still planned, tracked and logged normally.
 
 ### The FlyAround Simulations Bridge
 

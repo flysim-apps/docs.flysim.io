@@ -42,7 +42,7 @@ The scene, named **FlyAround**, contains:
 
 | Source | Purpose |
 |--------|---------|
-| **Sim (Window Capture)** | Captures your simulator window (MSFS / P3D / X-Plane) |
+| **Sim (Window Capture)** | Captures your simulator window (MSFS / X-Plane) |
 | **FlyAround Overlay** | A browser source showing the in-game overlay (`http://localhost:30500/share/#/streaming` by default) |
 | **Desktop Audio** | Sim sound |
 

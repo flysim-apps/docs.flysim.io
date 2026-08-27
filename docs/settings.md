@@ -38,14 +38,12 @@ Click **Settings** in the main navigation menu.
 | Setting | Description |
 |---------|-------------|
 | **Parking Mode** | Toggle parking behavior on/off |
-| **Ground Handling** | **GSX** (GSX ground services add-on) or **SIM** (default simulator ground handling) *(Windows/MSFS only)* |
-| **Use PMDG Offsets compatibility** | Deep integration for PMDG aircraft *(Windows/MSFS only; restart needed)* |
 | **First Officer auto-actions (lights, flaps, spoilers)** | The virtual First Officer handles lights, signs, APU, spoilers and flaps through every flight phase — also used by ATC-approved pushback/startup and line-up |
 | **Realistic AI crew voices** | Lifelike captain, cabin-crew and ATC voices, chosen automatically by airline |
 | **Crew voice gender** | System selected / Male / Female |
 
 {: .note }
-**Ground Handling — GSX vs SIM:** If you use the GSX add-on for pushback and boarding, set this to "GSX" so FlyAround correctly tracks those ground phases (and so ATC-approved pushback drives GSX). Use "SIM" for default simulator ground services. Windows-only options are hidden on macOS/Linux.
+**Ground handling — GSX vs SIM:** ground handling is chosen per flight, not here. When GSX is reachable, the active flight's settings show **Use GSX PRO for ground handling**; turn it on so FlyAround tracks pushback and boarding through GSX (and so ATC-approved pushback drives it). Leave it off for the simulator's own ground services. It needs MSFS on Windows with **FlyAround Simulations Connect for MSFS** installed, so the switch does not appear on macOS/Linux or over X-Plane.
 
 ### Developer API *(Enterprise)*
 
