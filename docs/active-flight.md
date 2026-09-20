@@ -85,6 +85,8 @@ With **First Officer auto-actions** enabled (Settings → System), a virtual FO 
 
 The FO also carries out [ATC-approved actions]({% link docs/atc-communications.md %}) — pushback, engine startup, and the line-up preparation when you're cleared for takeoff.
 
+You can also command the FO yourself — *"flaps one"*, *"gear up"*, and with GSX Pro installed *"start boarding"* or *"request pushback"* — by binding a First Officer push-to-talk key; see [First Officer Voice Commands]({% link docs/first-officer-voice.md %}).
+
 The FO works on both MSFS and X-Plane. You can mute the spoken callouts separately under **Settings → PA & Callouts → First Officer callouts** (the FO still performs the actions silently).
 
 ---

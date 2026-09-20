@@ -71,7 +71,7 @@ You can also replace any cabin announcement or callout with your own recording �
 |---------|-------------|
 | **Assistant Name** | Custom name for your AI Assistant (default: "FlyAround AI") |
 | **Mascot** | Choose the mascot character: Kika (classic) or Bouba (cap) |
-| **Voice & Push-to-Talk** | Enable push-to-talk, bind the assistant and ATC transmit keys (keyboard or joystick), pick and test your microphone, and set the recognition language — see [AI Assistant]({% link docs/ai-assistant.md %}) and [ATC Communications]({% link docs/atc-communications.md %}) |
+| **Voice & Push-to-Talk** | Enable push-to-talk, bind the assistant, ATC transmit and First Officer keys (keyboard or joystick), pick and test your microphone, and set the recognition language — see [AI Assistant]({% link docs/ai-assistant.md %}) and [ATC Communications]({% link docs/atc-communications.md %}) |
 
 ---
 

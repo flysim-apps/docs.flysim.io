@@ -68,7 +68,7 @@ You can speak to the assistant instead of typing — hold the push-to-talk key, 
 3. Pick your **Microphone** (or leave it on *System default*) and use **Test microphone** to verify the level bar moves as you speak.
 4. Optionally set the **Recognition language** — *Follow app language* (default), *Auto-detect*, or a specific locale.
 
-While you hold the key, a floating pill at the bottom of the screen shows *"Listening..."* with a live transcript, then *"Transcribing..."* after you release. A chip on the pill shows who you are addressing — **Assistant** or **ATC** (a separate key; see [ATC Communications]({% link docs/atc-communications.md %})).
+While you hold the key, a floating pill at the bottom of the screen shows *"Listening..."* with a live transcript, then *"Transcribing..."* after you release. A chip on the pill shows who you are addressing — **Assistant**, **ATC** (a separate key; see [ATC Communications]({% link docs/atc-communications.md %})) or **First Officer** (a third key that commands the FO and GSX ground services; see [First Officer Voice Commands]({% link docs/first-officer-voice.md %})).
 
 {: .note }
 Speech recognition runs through the FlyAround voice service and requires an internet connection and available AI credits.
