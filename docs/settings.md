@@ -63,6 +63,12 @@ You can also replace any cabin announcement or callout with your own recording â
 
 ---
 
+## FlyAround Mobile Tab
+
+Pair FlyAround Mobile with this PC: a QR code to scan from the app, the PC's address for typing in by hand, and (Pro) how often the desktop sends your flight and cabin to the app. See [FlyAround Mobile]({% link docs/flyaround-mobile.md %}).
+
+---
+
 ## AI Assistant Tab
 
 *(Visible only if the AI feature is enabled on your account)*

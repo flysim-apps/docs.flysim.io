@@ -134,3 +134,15 @@ parent: FAQ
 3. If you recently changed your password, use the updated one
 4. Try from a different network if possible
 5. Contact support if the issue continues
+
+---
+
+## FlyAround Mobile can't connect to my PC
+
+1. Make sure **FlyAround Desktop** is running on the PC
+2. Put the phone on the **same Wi-Fi** as the PC — not mobile data, a guest network or a VPN
+3. Scan the QR code again from **Settings → FlyAround Mobile** (the PC's address may have changed)
+4. Allow FlyAround (TCP port `30520`) in Windows Firewall on private networks
+5. On an iPhone, turn on **Settings → FlyAround → Local Network**
+
+See [FlyAround Mobile]({% link docs/flyaround-mobile.md %}) for the full pairing guide.
