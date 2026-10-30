@@ -346,7 +346,7 @@ A stream outlives the flight that started it: if you don't stop it, the Go live 
 
 ## Stream Deck keys
 
-The FlyAround plugin for Stream Deck (see **Support → FlyAround for Stream Deck** in the app) gets four
+The FlyAround plugin for Stream Deck (see [Stream Deck]({% link docs/stream-deck.md %}) for the install and every key) gets four
 streaming keys: **Go Live** (uses your saved defaults, the same path as the automatic start),
 **Stop stream**, **Mark moment** and **Chat** (opens the chat window). The keys show the live state with
 the elapsed time and stay dimmed without a flight or when streaming isn't on your account.
